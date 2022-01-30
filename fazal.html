@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+        *{
+            box-sizing: border-box;
+        }
+        h3 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 30px;
+        }
+        img {
+            display: block;
+            margin-top: -15px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            height: 100%;
+        }
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 17px;
+        }
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        .t1 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .d1 {
+            border: 2px solid red;
+        }
+        .d1 li {
+            font-family: 'Rubik', sans-serif;
+            font-size: 17px;
+        }
+        .container {
+            text-align: center;
+            font-size: 17px;
+        }
+        .f1 {
+            padding: 6px;
+            margin: 5px;
+        }
+        .pic img{
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            display: inline block;
+        }
+        button{
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: solid;
+        }
+        button:hover{
+            background-color: cyan;
+        }
+        header::before {
+            content: "";
+            background: url(bg.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 390vh;
+            width: 205vh;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #p1{
+            text-align: center;
+            font-size: 30px;
+            padding: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>War</h3>
+        <img src="War_poster.jpg" alt="War_official_poster">
+        <div class="c1">
+            <p>War is a 2019 Indian Hindi-language action thriller film directed by Siddharth Anand and produced by
+                Aditya
+                Chopra under his banner Yash Raj Films.The film stars Hrithik Roshan and Tiger Shroff in the lead roles
+                while Vaani Kapoor, Ashutosh Rana, Anupriya Goenka and Soni Razdan play supporting roles. It is the
+                third
+                installment in the YRF Spy Universe. The film was initially titled Fighters before the name was changed
+                to
+                War when the official teaser trailer for the film was released on 15 July 2019. The film follows an
+                Indian
+                soldier assigned to eliminate his former mentor who has gone rogue.</p>
+            <p>War received generally positive reviews from critics; on the review aggregator website Rotten Tomatoes,
+                the
+                film holds a rating of 72% based on 15 reviews, with an average rating of 7/10.As of 28 November 2019,
+                with
+                gross of 378.46 crore from India and 97.04 crore from overseas, the film has grossed 475.5 crore
+                worldwide,and has become the highest-grossing Bollywood film of 2019.</p>
+        </div><br>
+        <h3>Movie</h3>
+        <table class="t1">
+            <thead>
+                <tr>
+                    <th>Movie</th>
+                    <th>Year</th>
+                    <th>Actors</th>
+                    <th>Actress</th>
+                    <th>Villain</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>War</td>
+                    <td>2019</td>
+                    <td>Hrithik Roshan , Tiger Shroff</td>
+                    <td>Vaani Kapoor</td>
+                    <td>Sanjeev Vatsa</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Dialogues</h3>
+        <p>Some of my favourite dialogues are :</p>
+        <div class="d1">
+            <ol>
+                <li>Sabse pehle watan ... uske baad watan ... aur aakhir mein watan</li>
+                <li>Jo Sekha Hai Aapse Sekha Hai… Gaddari To Aapne Sekhai Nahi.</li>
+                <li>Khalid Kabhi Mera Student Huwa Karta Tha… Ab Shayad Usai Lagta Hai Ke Apne Teacher Se Aage Nikal
+                    Gaya
+                    Hai.</li>
+                <li>Match khatam hone se pehle jeetni ki poori koshish karo ... bhaago, daudo, khelo, lado, sab kuch ...
+                    par
+                    ek baar match khatam ho jaaye toh yeh mat socho ki tum haare ya jeete ... balki apne aap se yeh
+                    poocho,
+                    ki did I give it my very best or not ... aur agar tumhara jawaab haan hai ... then you're a winner
+                </li>
+            </ol>
+        </div>
+        <h3>Feedback Form</h3>
+        <form action="backend.php" class="container">
+            <div class="f1"><b>First Name : </b><br><input type="text" placeholder="Enter Your Name"></div>
+            <div class="f1"><b>Last Name : </b><br><input type="text" placeholder="Enter Your Last Name"></div>
+            <div class="f1"><b>Country : </b>
+                <br><select name="Country">
+                    <option value="Kabir">India</option>
+                    <option value="Khalid">Australia</option>
+                    <option value="Khalid">New Zealand</option>
+                    <option value="Khalid">South Africa</option>
+                    <option value="Khalid">Bangladesh</option>
+                    <option value="Khalid">Other</option>
+                </select>
+            </div>
+            <div class="f1"><b>Suggestions : </b><br><textarea name="box" rows="15" cols="40"
+                    placeholder="Give Your Valuable Suggestions"></textarea></div>
+            <div class="f1" id="a1"><b>Favourite Character : </b><br>
+                Kabir<input type="radio" name="ch1" id="k1">
+                Khalid<input type="radio" name="ch1" id="k2">
+            </div>
+            <div class="pic">
+                <img src="kabir.jpg" alt="Kabir"><br>
+                <img src="khalid.jpg" alt="Khalid"><br>
+            </div>
+            <div class="f1"><b>Ratings : </b><br><input type="text" placeholder="Out Of 10"></div>
+            <button class="f1"><b>submit</b></button>
+        </form>
+        <p id="p1">Thanks for visiting.</p>
+</body>
+</header>
+</html>
